@@ -50,6 +50,9 @@ class WorkerAPIClient:
         body = json.dumps(dict(payload)).encode() if payload is not None else None
         req = urllib.request.Request(self.base_url + path, data=body, method=method.upper(), headers={
             "Authorization": f"Bearer {self.secret}", "Accept": "application/json",
+            # Python's default Python-urllib user agent was rejected by the
+            # Cloudflare edge before the Worker could handle authenticated calls.
+            "User-Agent": "fresher-job-radar/1.0",
             **({"Content-Type": "application/json"} if body is not None else {}),
         })
         retries = self.retries if retry_limit is None else retry_limit
