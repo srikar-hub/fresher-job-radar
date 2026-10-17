@@ -1,0 +1,8 @@
+APP_ENV=development
+AI_ENABLED=false
+AI_MAX_REQUESTS_PER_DAY=10
+AI_MAX_INPUT_CHARS=6000
+SCANNER_API_SECRET=replace-with-a-long-random-local-secret
+BOT_TOKEN=replace-with-a-private-test-bot-token
+OWNER_TELEGRAM_ID=replace-with-your-numeric-telegram-user-id
+TELEGRAM_WEBHOOK_SECRET=replace-with-a-random-token-of-letters-numbers-underscores-or-hyphens

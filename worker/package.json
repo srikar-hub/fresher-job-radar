@@ -1,0 +1,19 @@
+{
+  "name": "fresher-job-radar-worker",
+  "private": true,
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "wrangler dev",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate:local": "wrangler d1 migrations apply fresher-job-radar-db --local",
+    "db:console:local": "wrangler d1 execute fresher-job-radar-db --local --command \"SELECT name FROM sqlite_master WHERE type='table' ORDER BY name;\""
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.4.4",
+    "@cloudflare/workers-types": "^5.20261016.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.151.1"
+  }
+}

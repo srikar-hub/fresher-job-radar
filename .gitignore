@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+secrets/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Cloudflare local state
+.wrangler/
+worker/node_modules/
+worker/.dev.vars
+worker/.dev.vars.*
+!worker/.dev.vars.example
+worker/.dev.vars.local

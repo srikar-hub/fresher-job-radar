@@ -1,0 +1,29 @@
+{
+  "graduation_years": [2026],
+  "education_keywords": ["computer science", "computer science engineering", "cse"],
+  "target_roles": [
+    "software engineer",
+    "software developer",
+    "sde",
+    "associate software engineer",
+    "graduate software engineer",
+    "junior software engineer",
+    "software engineer trainee",
+    "software development engineer",
+    "graduate engineer trainee",
+    "java developer",
+    "python developer",
+    "backend developer",
+    "frontend developer",
+    "full stack developer",
+    "application developer",
+    "web developer"
+  ],
+  "preferred_skills": [
+    "Java", "Spring Boot", "REST API", "SQL", "MySQL", "PostgreSQL",
+    "JavaScript", "React", "Git", "DSA", "Maven", "Gradle", "JUnit"
+  ],
+  "preferred_locations": ["Hyderabad", "Bengaluru", "Pune", "Chennai"],
+  "allow_relocation": true,
+  "include_internships": false
+}

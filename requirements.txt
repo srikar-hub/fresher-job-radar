@@ -1,0 +1,2 @@
+# Runtime dependency only; no paid API clients or AI provider SDKs.
+Telethon>=1.36,<2

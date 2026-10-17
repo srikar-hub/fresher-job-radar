@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fresher-job-radar"
+version = "0.1.0"
+description = "A free-first Telegram fresher software jobs monitoring project."
+requires-python = ">=3.11"
+dependencies = ["Telethon>=1.36,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "PyYAML>=6,<7"]
+
+[tool.setuptools.packages.find]
+include = ["scanner*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

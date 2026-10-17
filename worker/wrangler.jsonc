@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fresher-job-radar-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-17",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "fresher-job-radar-db", "database_id": "local-development-placeholder", "migrations_dir": "migrations" }
+  ],
+  "ai": { "binding": "AI" },
+  "vars": {
+    "APP_ENV": "production",
+    "AI_ENABLED": "false",
+    "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
+    "AI_MAX_REQUESTS_PER_DAY": "10",
+    "AI_MAX_INPUT_CHARS": "6000"
+  }
+}
