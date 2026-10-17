@@ -1,4 +1,4 @@
-py -3.11 -c "from scanner.local_env import load_local_env; load_local_env(); import os; from scanner.api_client import WorkerAPIClient; print([{k: c.get(k) for k in ('id','title','username','telegram_channel_id','status')} for c in WorkerAPIClient(os.environ['SCANNER_API_BASE_URL']).list_channels('ACTIVE')])""""Create a local Telethon StringSession using terminal-only login prompts."""
+"""Create a local Telethon StringSession using terminal-only login prompts."""
 
 from __future__ import annotations
 

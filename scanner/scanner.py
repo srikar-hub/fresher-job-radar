@@ -135,7 +135,11 @@ class Scanner:
         except Exception as exc:
             fatal = exc
             stats.errors += 1
-            logger.error("Scanner stopped safely", extra={"failure": type(exc).__name__})
+            # Show only the exception class and an HTTP status when available.
+            # Exception text and environment values can contain sensitive data.
+            status = getattr(exc, "status", None)
+            safe_status = f" (HTTP {status})" if isinstance(status, int) else ""
+            logger.error("Scanner stopped safely: %s%s", type(exc).__name__, safe_status)
         except asyncio.CancelledError:
             cancelled = True
             raise

@@ -6,7 +6,7 @@
   "workers_dev": true,
   "observability": { "enabled": true },
   "d1_databases": [
-    { "binding": "DB", "database_name": "fresher-job-radar-db", "database_id": "local-development-placeholder", "migrations_dir": "migrations" }
+    { "binding": "DB", "database_name": "fresher-job-radar-db", "database_id": "9cd73f5c-0552-4e1a-b67b-101e1790f71f", "migrations_dir": "migrations" }
   ],
   "ai": { "binding": "AI" },
   "vars": {
